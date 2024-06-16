@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+.full-width {
+    width: 100%;
+    height: 100%;
+    --background: black;
+}
+
+*{
+    font-family: 'Black Ops One', cursive;
+    color:aliceblue;
+    font-size: 29px;
+}
+
+.logout{
+    z-index: 2;   
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 50px;
+    margin-top: 50px;
+    ion-fab-button{
+      --background: rgb(173, 16, 16);
+    }
+  }
+ 
+  ion-icon{
+    font-size: 45px;
+  }
+
+  .candado{
+    font-size: 90px;
+  }
+  

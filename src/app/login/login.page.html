@@ -1,0 +1,36 @@
+<!-- <ion-header class = header>
+  <ion-toolbar>
+    <ion-title>Iniciar sesión</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+<ion-content [fullscreen]="true" style="--background: rgb(0, 0, 0);">
+  <div class="image-container">
+    <img src="../../assets/alarma.png" alt="Alarma">
+  </div>
+  <div class = text-container>
+    <p>La mayor seguridad para tu dispositivo</p>
+  </div>
+  <div class = login>
+    <form (ngSubmit)="login()">
+      <div>      
+          <ion-input style = "text-align: center;" placeholder="Ingrese su correo" type="email" [(ngModel)]="email" name="email"></ion-input>
+          <ion-input style = "text-align: center;" placeholder="Ingrese su contraseña" type="password" [(ngModel)]="password" name="password" required minlength="6"></ion-input>
+      </div>
+      <div class = button-container>
+        <ion-button style = "font-size: 20px; --background: rgb(144, 0, 0); color: white;" type="submit">Iniciar sesión</ion-button>
+      </div>
+    </form>
+    <div class = button-container2>
+      <div class = button-container3>
+        <ion-button style="--background: rgb(166, 166, 166);" (click)="AutoRellenar('admin@admin.com','111111')"><ion-icon name="person-circle-outline"></ion-icon> <p>Usuario 1</p> </ion-button>      
+      </div>
+      <div class = button-container3>
+        <ion-button style="--background: rgb(176, 52, 52);" (click)="AutoRellenar('invitado@invitado.com','222222')"> <ion-icon name="person-circle-outline"></ion-icon> <p>Usuario 2</p> </ion-button>  
+      </div>
+      <div class = button-container3>
+        <ion-button style="--background: rgb(77, 77, 77);" (click)="AutoRellenar('usuario@usuario.com','333333')"><ion-icon name="person-circle-outline"></ion-icon> <p>Usuario 3</p> </ion-button>      
+      </div>
+    </div>    
+  </div>
+</ion-content> 
